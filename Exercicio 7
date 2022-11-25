@@ -1,0 +1,15 @@
+#include <stdio.h>
+//Pedro oliveira 01/09,atividade 1,exercicio 7
+int main()
+{
+    int a,b;
+    scanf("%d",&b);
+    scanf("%d",&a);
+    while (b==0){
+        
+        scanf("%d",&b);
+    }
+    printf("divisao= %d",a/b);
+    
+    return 0;
+}
