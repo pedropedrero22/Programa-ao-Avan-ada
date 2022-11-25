@@ -1,0 +1,39 @@
+//pedro oliveira de carvalho ads matutino
+
+#include <stdio.h>
+#define Tamanho 3
+
+int main()
+{
+    int vetor[Tamanho], soma=0,media=0,numero;
+
+    
+    for(int i= 0; i< Tamanho; i++){
+    printf("Informe um número: [%d]",i);
+    scanf("%d",&vetor[i]);
+    
+    soma= soma+vetor[i];
+    }
+    printf("\nA soma dos valores é: %d",soma);
+    media = soma/Tamanho;
+    printf("\nA média dos valores é: %d", soma/Tamanho);
+    
+    for(int i= 0; i< Tamanho; i++){
+        if(vetor[i]> media){
+        printf("\nValores acima da média: %d",vetor[i]);
+        }
+    }
+     printf("\nInforme um número: ");
+    scanf("%d",&numero);
+    for(int i= 0; i< Tamanho; i++){
+        if(vetor[i]==numero){
+            printf("\nO número informado consta no vetor.");
+        }
+        else{
+            printf("\nO número não esta no vetor.");}
+    }
+    return 0;
+    
+}
+
+
