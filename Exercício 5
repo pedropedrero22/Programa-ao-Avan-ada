@@ -1,0 +1,16 @@
+pedro oliveira,01/09,lista 1
+
+#include <stdio.h>
+
+int main()
+{
+    float salfixo,ven,saltotal;
+    
+    scanf("%f",&salfixo);
+    scanf("%f",&ven);
+    
+    if (ven <= 1500) saltotal = ven *3/100;
+    else             saltotal = 1500*3/100+ (ven-1500)*5/100 + salfixo;
+
+    printf("Salário Total= %f",saltotal);
+}
