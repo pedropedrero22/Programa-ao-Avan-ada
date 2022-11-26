@@ -1,0 +1,38 @@
+#include <stdio.h>
+//pedro oliveira de carvalho
+
+int main()
+{
+    float a = 7, b = 2;
+    printf("A soma de %.2f e %.2f é %.2f \n", a, b, a + b);
+    printf("A subtração é %.2f \n", a - b);
+    printf("A divisao é %.2f \n", a / b);
+    printf("A multiplicação é %.2f \n", a * b);
+
+    return 0;
+}
+
+//contador
+#include <stdio.h>
+
+void contagemNegativo(int numero);
+
+int main()
+{
+    int numero = 0;
+    printf("Informe um número: ");
+    scanf("%d", &numero);
+
+    contagemPositivo(numero);
+    contagemNegativo(numero);
+
+    return 0;
+}
+
+void contagemPositivo(int numero)
+{
+    for (int i = numero; i >= 0; i--)
+    {
+        printf("%d \n", i);
+    }
+}
