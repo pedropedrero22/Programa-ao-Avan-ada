@@ -1,0 +1,110 @@
+Pedro oliveira de carvalho
+
+1) Informar em qual das três posições colocadas está o maior número.
+
+int main()
+{
+    // variaveis
+    int a,b,c,posi, maior;
+    
+    // entrada
+    printf("digite 3 numeros:");
+    scanf("%d %d %d", &a,&b,&c);
+    
+    // processamento
+    maior=a; posi=1;
+    if (b>maior) {maior=b; posi=2;}
+    if (c>maior) {maior=c; posi=3;}
+    
+    //saida
+    printf("maior esta na posicao %d", posi);
+
+    return 0;
+}
+
+2) Saber o salário total de um funcionário:
+
+int main()
+{
+    // Váriaveis
+    float salFixo, vendas, salTotal;
+    
+    //entrada
+    printf("Digite o seu salário fixo: ");
+    scanf("%f", &salFixo);
+    printf("Digite o valor das vendas: ");
+    scanf("%f", &vendas);
+    
+    //processamento
+    if (vendas > 1500)
+     salTotal = 1500 * 3 / 100 + (vendas - 1500) * 5 / 100;
+   
+    else
+    salTotal = 1500 * 3 / 100;
+    
+    //Saída
+    salTotal = salTotal + salFixo;
+    printf("%0.3f", salTotal);
+
+    return 0;
+}
+
+3) Contar e escrever quantos valores pares as 10 posições do vetor tem.
+
+int main() {
+   int v[TAMANHO], totalPares=0;
+  
+   printf ("(ENTRADA) Digite %d valores\n", TAMANHO);
+   for (int i=0; i< TAMANHO ;i++) {
+       printf ("v[%d]: ", i);
+       scanf ("%d", &v[i]);
+   }
+   
+   for (int i=0; i< TAMANHO ;i++) {
+       if (v[i] %2 == 0) totalPares++;
+   }
+
+   printf ("\n(SAIDA) A quantidade de pares é %d", totalPares);
+
+    return 0;
+}
+
+4) Ler 6 vetores inteiros e imprimir os valores lidos de forma inversa.
+
+int main() {
+   int v[TAMANHO];
+   
+   printf ("(ENTRADA) Digite %d valores\n", TAMANHO);
+   for (int i=0; i< TAMANHO ;i++) {
+       printf ("v[%d]: ", i);
+       scanf ("%d", &v[i]);
+   }
+   
+   printf ("\n(SAÍDA) Em ordem inversa:");
+   for (int i= TAMANHO-1 ; i>=0 ; i--) {
+        printf ("\nv[%d]: %d", i,v[i]);
+   }
+
+    return 0;
+}
+
+5) Imprimir um retângulo de triângulos.
+
+void imprimeRetangulo (int lin, int col) {
+    for (int l=1; l<=lin; l++){
+        for (int c=1; c<=col; c++)
+            printf ("*");
+        printf ("\n");
+    }
+}
+int main()
+{
+    int l, c;
+    printf ("Linhas? ");
+    scanf ("%d", &l);
+    printf ("Colunas? ");
+    scanf ("%d", &c);
+    imprimeRetangulo(l,c); 
+    return 0;
+    
+    }
