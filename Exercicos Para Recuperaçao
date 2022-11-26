@@ -4,19 +4,18 @@
 
 int main()
 {
-    // variaveis
-    int a,b,c,posi, maior;
     
-    // entrada
+    int a,b,c,posi, maior;
+        
     printf("digite 3 numeros:");
     scanf("%d %d %d", &a,&b,&c);
     
-    // processamento
+   
     maior=a; posi=1;
     if (b>maior) {maior=b; posi=2;}
     if (c>maior) {maior=c; posi=3;}
     
-    //saida
+   
     printf("maior esta na posicao %d", posi);
 
     return 0;
@@ -26,23 +25,23 @@ int main()
 
 int main()
 {
-    // Váriaveis
+   
     float salFixo, vendas, salTotal;
     
-    //entrada
+    
     printf("Digite o seu salário fixo: ");
     scanf("%f", &salFixo);
     printf("Digite o valor das vendas: ");
     scanf("%f", &vendas);
     
-    //processamento
+   
     if (vendas > 1500)
      salTotal = 1500 * 3 / 100 + (vendas - 1500) * 5 / 100;
    
     else
     salTotal = 1500 * 3 / 100;
     
-    //Saída
+   
     salTotal = salTotal + salFixo;
     printf("%0.3f", salTotal);
 
